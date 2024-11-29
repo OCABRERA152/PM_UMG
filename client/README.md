@@ -1,29 +1,25 @@
-1. npm install
 
-# Comenzando con Create React App
+## Scripts a utilizar 
+En el directorio del proyecto, se puede ejecutar:
 
-Este proyecto fue inicializado con [Create React App](https://github.com/facebook/create-react-app).
 
-## Scripts Disponibles
+### 1. 'npm install'
+para instalar las librerias del proyecto, se debe ejecutar la primera vez sobre la carpeta de server.
 
-En el directorio del proyecto, puedes ejecutar:
 
-### `npm start`
-
-Ejecuta la aplicación en modo desarrollo.\
+### 2. 'npm start'
+Ejecuta la aplicación en modo desarrollo
 Abre [http://localhost:3000](http://localhost:3000) para verla en el navegador.
 
-La página se recargará si realizas cambios.\
-También verás errores de lint en la consola.
+La página se recargará si se realizan cambios.
+También podremos ver errores en la consola.
 
-### `npm test`
 
-Inicia el ejecutor de pruebas en modo interactivo.\
-Consulta la sección sobre [ejecutar pruebas](https://facebook.github.io/create-react-app/docs/running-tests) para más información.
+### 3. 'npm test'
+Inicia el ejecutor de pruebas en modo interactivo.
 
-### `npm run build`
 
-Construir la aplicación para producción en la carpeta `build`.\
+### 4. 'npm run build'
+
+Construir la aplicación para producción en la carpeta `build`.
 Se empaqueta React en modo producción y optimiza la construcción para obtener el mejor rendimiento.
-
-La construcción es minimizada y los nombres de archivo incluyen hashes.\
