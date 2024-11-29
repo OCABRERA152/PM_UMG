@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+const { port } = require("../config");
+require("dotenv").config({ path: "../.env" });
+const app = require("../app");
+const db = require("../db/models");
+
+// Check the database connection before starting the app.
+db.sequelize
+  .authenticate()
+  .then(() => {
+    console.log("Conexión con la base de datos establecida.  Sequelize listo para usar...");
+
+    // Start listening for connections.
+    app.listen(port, () => console.log(`Escuchando en el puerto ${port}...`));
+  })
+  .catch((err) => {
+    console.log("Conexión con la base de datos fallida.");
+    console.error(err);
+  });
